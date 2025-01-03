@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MenuCard from './MenuCard';
 // import JiduCard from './components/Jidu';
 import HomePage from './HomePage';
-import YashCard from './components/yash';
-import VishalCard from './components/Vishal';
+// import YashCard from './components/yash';
+// import VishalCard from './components/Vishal';
 
 function App() {
     return (
@@ -13,8 +13,8 @@ function App() {
                 <Route path="/" element={<HomePage/>} />
                 <Route path="/menucard" element={<MenuCard/>} />
                 {/* <Route path="/jidu" element={<JiduCard/>} /> */}
-                <Route path="/vishal" element={<VishalCard/>} />
-                <Route path="/yashmali" element={<YashCard/>} />
+                {/* <Route path="/vishal" element={<VishalCard/>} />
+                <Route path="/yashmali" element={<YashCard/>} /> */}
 
                
             </Routes>
