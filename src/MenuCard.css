@@ -1,0 +1,142 @@
+/* MenuCard container */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f9; /* Light grayish background */
+  }
+  
+  /* Individual card styling */
+  .menu-card {
+    background: linear-gradient(145deg, #fdfdff, #ececf7);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid #6c5ce7; /* Category accent color */
+  }
+  
+  /* Hover effect for cards */
+  .menu-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3), -5px -5px 20px rgba(255, 255, 255, 0.9);
+    background: linear-gradient(145deg, #ececf7, #f8f9fd); /* Slightly lighter background */
+  }
+  
+  /* Card title */
+  .menu-card h2 {
+    font-size: 1.5em;
+    color: #2c3e50; /* Dark gray */
+    margin-bottom: 10px;
+    animation: fadeIn 0.8s ease;
+  }
+  
+  /* Category and description */
+  .menu-card p {
+    font-size: 1em;
+    color: #34495e; /* Medium gray */
+    margin: 5px 0;
+  }
+  
+  /* Highlight for categories */
+  .menu-card p:nth-of-type(2) {
+    font-weight: bold;
+    color: #0984e3; /* Vibrant blue for categories */
+  }
+  
+  /* Price styling */
+  .menu-card .price {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #00b894; /* Vibrant green for prices */
+  }
+  
+  /* Admin Page Link */
+  a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #6c5ce7; /* Purple background */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Link hover effect */
+  a:hover {
+    background-color: #4834d4; /* Darker purple */
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Container styling */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f9; /* Light background */
+    gap: 20px; /* Space between links */
+    font-family: 'Arial', sans-serif;
+    text-align: center; /* Center text alignment */
+  }
+  
+  /* Link styling */
+  a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2c3e50; /* Dark gray for text */
+    background: linear-gradient(145deg, #ffffff, #d4d4d4);
+    border: 2px solid #3498db; /* Blue border for links */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2), -3px -3px 10px rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    width: 70%; /* Center align the button with width */
+    max-width: 500px; /* Limit the button width */
+  }
+  
+  /* Hover effects */
+  a:hover {
+    color: #fff; /* White text on hover */
+    background: #3498db; /* Blue background on hover */
+    border-color: #2980b9; /* Darker blue border on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    div {
+      padding: 20px;
+      gap: 15px;
+    }
+  
+    a {
+      font-size: 1em;
+      padding: 8px 15px;
+      width: 90%; /* Full width on smaller screens */
+    }
+  }
+  
