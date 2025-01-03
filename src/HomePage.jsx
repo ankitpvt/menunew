@@ -7,9 +7,10 @@ const HomePage = () => {
   return (
     <div>
 <Link to="/menucard">Ankit Rajput Family Resortant Erandol</Link>
-{/* <Link to="/yashmali">yash mali Family Resortant Varnagaon</Link>
-<Link to="/vishal">vishal sonar Family Resortant Varati</Link> */}
-{/* <Link to="/jidu">jid Family Resortant Dhule</Link> */}
+<Link to="/jidu">Jid Patil Family Resortant Dhule</Link>
+<Link to="/vishal">Vishal Sonar Family Resortant Varati</Link>
+<Link to="/yash">Yash Mali Family Resortant Varangaon</Link>
+
     </div>
   )
 }
